@@ -25,7 +25,7 @@ public class Ad {
         this.description = description;
     }
 
-    public Ad(long userId, String title, String description, String date, String time, String location, boolean cancelled) {
+    public Ad(long userId, String title, String description, String date, String time, String location) {
         this.userId = userId;
         this.title = title;
         this.description = description;
