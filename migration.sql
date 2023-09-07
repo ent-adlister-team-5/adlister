@@ -1,4 +1,4 @@
-CREATE DATABASE event_adlister_db;
+CREATE DATABASE IF NOT EXISTS event_adlister_db;
 USE event_adlister_db;
 
 DROP TABLE IF EXISTS ads;
