@@ -17,6 +17,19 @@
                 <label for="description">Description</label>
                 <textarea id="description" name="description" class="form-control" type="text"></textarea>
             </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <textarea id="location" name="location" type="text" class="form-control"></textarea>
+            </div>
+
             <input type="submit" class="btn btn-block btn-primary">
         </form>
     </div>
