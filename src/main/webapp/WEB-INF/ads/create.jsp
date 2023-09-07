@@ -23,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label for="time">Time</label>
-                <input type="time" id="time" name="time" min="09:00" max="18:00" required class="form-control">
+                <input type="time" id="time" name="time" required class="form-control">
             </div>
             <div class="form-group">
                 <label for="location">Location</label>
