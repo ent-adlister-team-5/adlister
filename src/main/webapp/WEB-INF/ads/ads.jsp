@@ -16,13 +16,13 @@
         <div class="card">
     <div class="card-body">
         <div class="col-md-6">
-            <form class= "search-details" role="search" method="post" action="/details">
+            <div class= "search-details">
             <h2>${ad.title}</h2>
             <p>${ad.description}</p>
-                <button type="submit" class="btn btn-primary">View Details</button>
-            </form>
-</div>
-</div>
+                <a class="btn btn-primary" href="./id-details?id=${ad.id}">View Details</a>
+            </div>
+        </div>
+    </div>
         </div>
     </c:forEach>
 </div>
