@@ -62,14 +62,30 @@ public class MySQLAdsDao implements Ads {
     }
 
     @Override
-    public Ad findAdbyTitle(String title) {
-        String query = "SELECT * FROM ads WHERE title = ? LIMIT 1";
+    public List<Ad> findAdbyTitle(String title) {
+        String query = "SELECT * FROM ads WHERE title LIKE CONCAT('%',?,'%')";
         try {
             PreparedStatement stmt = connection.prepareStatement(query);
             stmt.setString(1, title);
 
             ResultSet rs = stmt.executeQuery();
-            if (rs.next()) {
+
+            return createAdsFromResults(rs);
+
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding an add by this title", e);
+        }
+    }
+
+    @Override
+    public Ad findbyId(Long id) {
+        String query = "SELECT * FROM ads WHERE id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setLong(1, id);
+
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()) {
                 Ad ad = new Ad(
                         rs.getLong("id"),
                         rs.getLong("user_id"),
@@ -79,13 +95,11 @@ public class MySQLAdsDao implements Ads {
                         rs.getString("time"),
                         rs.getString("location"),
                         rs.getBoolean("cancelled")
-
                 );
                 return ad;
             }
-
         } catch (SQLException e) {
-            throw new RuntimeException("Error finding an add by this title", e);
+            throw new RuntimeException("Error finding an add by this id", e);
         }
         return null;
     }
@@ -95,7 +109,11 @@ public class MySQLAdsDao implements Ads {
                 rs.getLong("id"),
                 rs.getLong("user_id"),
                 rs.getString("title"),
-                rs.getString("description")
+                rs.getString("description"),
+                rs.getString("date"),
+                rs.getString("time"),
+                rs.getString("location"),
+                rs.getBoolean("cancelled")
         );
     }
 

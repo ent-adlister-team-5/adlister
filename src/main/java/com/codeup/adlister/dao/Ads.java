@@ -10,19 +10,13 @@ public interface Ads {
     // insert a new ad and return the new ad's id
     Long insert(Ad ad);
 
-    Ad findAdbyTitle(String title);
-
-
-
-
-
-
-
-
 
     // delete ad
     void deleteById(long id);
 
     void editAd (long id, String userId, String title, String description, String date, String time, String location);
 
+    List<Ad> findAdbyTitle(String title);
+
+    Ad findbyId(Long id);
 }
