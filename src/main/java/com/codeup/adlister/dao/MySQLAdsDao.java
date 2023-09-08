@@ -62,32 +62,18 @@ public class MySQLAdsDao implements Ads {
     }
 
     @Override
-    public Ad findAdbyTitle(String title) {
-        String query = "SELECT * FROM ads WHERE title = ? LIMIT 1";
+    public List<Ad> findAdbyTitle(String title) {
+        String query = "SELECT * FROM ads WHERE title LIKE CONCAT('%',?,'%')";
         try {
             PreparedStatement stmt = connection.prepareStatement(query);
             stmt.setString(1, title);
 
             ResultSet rs = stmt.executeQuery();
-            if(rs.next()) {
-                Ad ad = new Ad(
-                        rs.getLong("id"),
-                        rs.getLong("user_id"),
-                        rs.getString("title"),
-                        rs.getString("description"),
-                        rs.getString("date"),
-                        rs.getString("time"),
-                        rs.getString("location"),
-                        rs.getBoolean("cancelled")
-
-                );
-                return ad;
-            }
+            return createAdsFromResults(rs);
 
         } catch (SQLException e) {
             throw new RuntimeException("Error finding an add by this title", e);
         }
-        return null;
     }
 
     @Override
