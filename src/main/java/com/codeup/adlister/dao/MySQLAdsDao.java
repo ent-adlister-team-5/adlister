@@ -90,12 +90,43 @@ public class MySQLAdsDao implements Ads {
         return null;
     }
 
+    @Override
+    public Ad findbyId(Long id) {
+        String query = "SELECT * FROM ads WHERE id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setLong(1, id);
+
+            ResultSet rs = stmt.executeQuery();
+            if(rs.next()) {
+                Ad ad = new Ad(
+                        rs.getLong("id"),
+                        rs.getLong("user_id"),
+                        rs.getString("title"),
+                        rs.getString("description"),
+                        rs.getString("date"),
+                        rs.getString("time"),
+                        rs.getString("location"),
+                        rs.getBoolean("cancelled")
+                );
+                return ad;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding an add by this id", e);
+        }
+        return null;
+    }
+
     private Ad extractAd(ResultSet rs) throws SQLException {
         return new Ad(
                 rs.getLong("id"),
                 rs.getLong("user_id"),
                 rs.getString("title"),
-                rs.getString("description")
+                rs.getString("description"),
+                rs.getString("date"),
+                rs.getString("time"),
+                rs.getString("location"),
+                rs.getBoolean("cancelled")
         );
     }
 
