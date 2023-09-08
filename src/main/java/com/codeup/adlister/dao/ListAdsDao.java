@@ -28,7 +28,12 @@ public class ListAdsDao implements Ads {
     }
 
     @Override
-    public Ad findAdbyTitle(String title) {
+    public List<Ad> findAdbyTitle(String title) {
+        return null;
+    }
+
+    @Override
+    public Ad findbyId(Long id) {
         return null;
     }
 
