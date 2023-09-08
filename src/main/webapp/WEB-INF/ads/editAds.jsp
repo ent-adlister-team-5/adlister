@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Create a new Ad</h1>
+    <h1>Edit Ad</h1>
     <form >
         <div class="form-group">
             <label for="title">Title</label>
