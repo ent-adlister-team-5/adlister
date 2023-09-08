@@ -11,4 +11,17 @@ public interface Ads {
     Long insert(Ad ad);
 
     Ad findAdbyTitle(String title);
+
+
+
+
+
+
+
+
+
+
+
+    // delete ad
+    void deleteById(long id);
 }
