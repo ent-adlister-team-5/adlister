@@ -24,7 +24,7 @@
                         <div class= "search-details">
                             <h2>${ad.title}</h2>
                             <p>${ad.location}</p>
-                            <a class="btn btn-primary" href="./id-details?id=${ad.id}">Edit event</a>
+                            <a class="btn btn-primary" href="./edit-ad?id=${ad.id}">Edit event</a>
                         </div>
                     </div>
                 </div>
