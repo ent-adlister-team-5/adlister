@@ -1,41 +1,36 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: donaldtwitty
-  Date: 9/8/23
-  Time: 4:10 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Edit Ad</title>
+    <jsp:include page="/WEB-INF/partials/head.jsp">
+        <jsp:param name="title" value="Edit Event" />
+    </jsp:include>
 </head>
 <body>
 <div class="container">
     <h1>Edit Ad</h1>
-    <form >
+
+    <form method="">
+
         <div class="form-group">
             <label for="title">Title</label>
-            <input id="title" name="title" class="form-control" type="text">
-            <script>
-
-            </script>
+            <input id="title" name="title" class="form-control" type="text" value="${ad.title}">
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea id="description" name="description" class="form-control" type="text"></textarea>
+            <textarea id="description" name="description" class="form-control" type="text">${ad.description}</textarea>
         </div>
         <div class="form-group">
             <label for="date">Date</label>
-            <input type="date" id="date" name="date" class="form-control">
+            <input type="date" id="date" name="date" class="form-control" value="${ad.date}">
         </div>
         <div class="form-group">
             <label for="time">Time</label>
-            <input type="time" id="time" name="time" required class="form-control">
+            <input type="time" id="time" name="time" required class="form-control" value="${ad.time}">
         </div>
         <div class="form-group">
             <label for="location">Location</label>
-            <textarea id="location" name="location" type="text" class="form-control"></textarea>
+            <textarea id="location" name="location" type="text" class="form-control">${ad.location}</textarea>
         </div>
 
         <input type="submit" class="btn btn-block btn-primary">
