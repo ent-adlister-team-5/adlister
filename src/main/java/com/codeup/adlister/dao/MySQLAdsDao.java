@@ -18,9 +18,9 @@ public class MySQLAdsDao implements Ads {
         try {
             DriverManager.registerDriver(new Driver());
             connection = DriverManager.getConnection(
-                config.getUrl(),
-                config.getUser(),
-                config.getPassword()
+                    config.getUrl(),
+                    config.getUser(),
+                    config.getPassword()
             );
         } catch (SQLException e) {
             throw new RuntimeException("Error connecting to the database!", e);
@@ -63,10 +63,10 @@ public class MySQLAdsDao implements Ads {
 
     private Ad extractAd(ResultSet rs) throws SQLException {
         return new Ad(
-            rs.getLong("id"),
-            rs.getLong("user_id"),
-            rs.getString("title"),
-            rs.getString("description")
+                rs.getLong("id"),
+                rs.getLong("user_id"),
+                rs.getString("title"),
+                rs.getString("description")
         );
     }
 
@@ -77,4 +77,20 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
+
+//    private Ad findById(long id) {
+//        try {
+//            String query = "SELECT * FROM ads WHERE id = ?";
+//            PreparedStatement stmt = connection.prepareStatement(query);
+//            stmt.setLong(1, id);
+//            ResultSet rs = stmt.executeQuery();
+//
+//            if (rs.next()) {
+////                return  rs.next();
+//            }
+//        } catch (SQLException e) {
+//            throw new RuntimeException("Error finding ad by ID", e);
+//        }
+//        return null;
+//    }
 }
