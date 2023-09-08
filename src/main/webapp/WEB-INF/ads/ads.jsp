@@ -21,4 +21,6 @@
 </div>
 
 </body>
+<jsp:include page="/WEB-INF/partials/script.jsp"></jsp:include>
+
 </html>
