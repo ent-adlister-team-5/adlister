@@ -99,6 +99,12 @@ public class MySQLAdsDao implements Ads {
         );
     }
 
+    @Override
+    public void deleteById(long id) {
+
+    }
+
+
     private List<Ad> createAdsFromResults(ResultSet rs) throws SQLException {
         List<Ad> ads = new ArrayList<>();
         while (rs.next()) {
