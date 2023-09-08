@@ -20,13 +20,24 @@ public class Ad {
 
     }
 
-//    public Ad(long userId, String title, String description) {
-//        this.userId = userId;
-//        this.title = title;
-//        this.description = description;
-//    }
+    public Ad(long userId, String title, String description) {
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+    }
 
     public Ad(long userId, String title, String description, String date, String time, String location, boolean cancelled) {
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.time = time;
+        this.location = location;
+        this.cancelled = cancelled;
+    }
+
+    public Ad(long id, long userId, String title, String description, String date, String time, String location, boolean cancelled) {
+        this.id = id;
         this.userId = userId;
         this.title = title;
         this.description = description;

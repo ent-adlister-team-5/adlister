@@ -27,6 +27,11 @@ public class ListAdsDao implements Ads {
         return ad.getId();
     }
 
+    @Override
+    public Ad findAdbyTitle(String title) {
+        return null;
+    }
+
 //    public Ad findById(long id) {
 //        if (ads == null) {
 //            ads = generateAds();
