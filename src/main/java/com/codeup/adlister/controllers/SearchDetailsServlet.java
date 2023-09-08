@@ -22,14 +22,14 @@ public class SearchDetailsServlet extends HttpServlet {
 
         if(ads == null) {
             req.setAttribute("message", "No matching ads found");
-            req.getRequestDispatcher("/WEB-INF/testPackage/testSearchView.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/testPackage/idDetails.jsp").forward(req, resp);
             return;
         }
 //        if(ad.getTitle().equalsIgnoreCase(searchAd) || searchAd.toLowerCase().contains(ad.getTitle().toLowerCase())) {
 //            req.setAttribute("ad", ad);
 //        }
         req.setAttribute("ads", ads);
-        req.getRequestDispatcher("/WEB-INF/testPackage/testSearchView.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/ads/searchTitle.jsp").forward(req, resp);
     }
 
     @Override
