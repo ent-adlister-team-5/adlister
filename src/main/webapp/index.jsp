@@ -10,7 +10,7 @@
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <div class="container">
         <h1>Welcome to the Adlister!</h1>
-        <jsp:include page="/WEB-INF/partials/main.jsp" />
+        <jsp:include page="/WEB-INF/partials/carosuel.jsp" />
 
     </div>
 <jsp:include page="/WEB-INF/partials/script.jsp"></jsp:include>
