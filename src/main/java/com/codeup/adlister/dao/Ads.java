@@ -20,8 +20,6 @@ public interface Ads {
 
 
 
-
-
     // delete ad
     void deleteById(long id);
 }
