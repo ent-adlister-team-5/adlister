@@ -19,7 +19,7 @@ public class IdDetailsServlet extends HttpServlet {
         Ad ad = DaoFactory.getAdsDao().findbyId(adId);
         System.out.println(ad.getTitle());
         req.setAttribute("ad", ad);
-        req.getRequestDispatcher("/WEB-INF/testPackage/testSearchView.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/ads/idDetails.jsp").forward(req, resp);
     }
 
 }
