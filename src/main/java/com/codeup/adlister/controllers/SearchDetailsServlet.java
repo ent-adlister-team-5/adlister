@@ -20,14 +20,21 @@ public class SearchDetailsServlet extends HttpServlet {
         String searchAd = req.getParameter("search");
         List<Ad> ads = DaoFactory.getAdsDao().findAdbyTitle(searchAd);
 
-        if(ads == null) {
-            req.setAttribute("message", "No matching ads found");
-            req.getRequestDispatcher("/WEB-INF/testPackage/idDetails.jsp").forward(req, resp);
-            return;
-        }
+//        if(ads == null) {
+//            /** Here, you should sendRedirect back to `dashboard` with a query to display a message */
+//            resp.sendRedirect("");
+//            req.setAttribute("message", "No matching ads found");
+//            req.getRequestDispatcher("/WEB-INF/ads/searchTitle.jsp").forward(req, resp);
+//            return;
+//        }
 //        if(ad.getTitle().equalsIgnoreCase(searchAd) || searchAd.toLowerCase().contains(ad.getTitle().toLowerCase())) {
 //            req.setAttribute("ad", ad);
 //        }
+        if (ads.size() == 0) {
+            req.setAttribute("noAds", true);
+            req.getRequestDispatcher("/WEB-INF/ads/searchTitle.jsp").forward(req, resp);
+            return;
+        }
         req.setAttribute("ads", ads);
         req.getRequestDispatcher("/WEB-INF/ads/searchTitle.jsp").forward(req, resp);
     }
