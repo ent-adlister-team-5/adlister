@@ -25,12 +25,16 @@ public class EditAdServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         /** waiting on MySQLAdsDao method, will receive response and set things */
         Long adId = Long.parseLong(req.getParameter("id"));
+        boolean cancelled = req.getParameter("cancel") != null;
+        System.out.println("Cancel parameter value: " + req.getParameter("cancel"));
+
         DaoFactory.getAdsDao().editAd(
                 req.getParameter("title"),
                 req.getParameter("description"),
                 req.getParameter("date"),
                 req.getParameter("time"),
                 req.getParameter("location"),
+                cancelled,
                 adId
         );
         resp.sendRedirect("/profile");
