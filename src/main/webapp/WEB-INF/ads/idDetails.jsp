@@ -10,22 +10,14 @@
     <h1>Selected Ad... </h1>
     <div>
 
-<%--            This will no longer be needed, but can utilize for boolean--%>
-
-                <p>${ad.title}</p>
-                <p>${ad.description}</p>
-                <p>Date: ${ad.date}</p>
-                <p>Time: ${ad.time}</p>
-                <p>Location: ${ad.location}</p>
-                <c:if test="${ad.cancelled == true}">
-                    <h2>Event cancelled</h2>
-                </c:if>
-
-
-
-
-
-
+        <p>${ad.title}</p>
+        <p>${ad.description}</p>
+        <p>Date: ${ad.date}</p>
+        <p>Time: ${ad.time}</p>
+        <p>Location: ${ad.location}</p>
+        <c:if test="${ad.cancelled == true}">
+            <h2>Event cancelled</h2>
+        </c:if>
 
     </div>
 
