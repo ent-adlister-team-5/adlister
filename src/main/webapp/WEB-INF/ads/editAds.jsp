@@ -10,7 +10,7 @@
 <div class="container">
     <h1>Edit Ad</h1>
 
-    <form method="">
+    <form method="POST" action="./edit-ad?id=${ad.id}">
 
         <div class="form-group">
             <label for="title">Title</label>
