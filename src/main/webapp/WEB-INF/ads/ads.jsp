@@ -12,7 +12,7 @@
 
 <div class="container">
     <h1>Here Are all the ads!</h1>
-
+<div
     <c:forEach var="ad" items="${ads}">
         <div class="card">
     <div class="card-body">
@@ -26,6 +26,7 @@
     </div>
         </div>
     </c:forEach>
+    </div>
 </div>
 </div>
 </body>
