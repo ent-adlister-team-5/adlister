@@ -21,6 +21,8 @@ public class SearchDetailsServlet extends HttpServlet {
         List<Ad> ads = DaoFactory.getAdsDao().findAdbyTitle(searchAd);
 
         if(ads == null) {
+            /** Here, you should sendRedirect back to `dashboard` with a query to display a message */
+            resp.sendRedirect("");
             req.setAttribute("message", "No matching ads found");
             req.getRequestDispatcher("/WEB-INF/testPackage/idDetails.jsp").forward(req, resp);
             return;
