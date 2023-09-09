@@ -9,20 +9,21 @@
 <body>
     <h1>Selected Ad... </h1>
     <div>
-        <c:choose>
+
 <%--            This will no longer be needed, but can utilize for boolean--%>
-            <c:when test="${ad != null}">
+
                 <p>${ad.title}</p>
                 <p>${ad.description}</p>
                 <p>Date: ${ad.date}</p>
                 <p>Time: ${ad.time}</p>
                 <p>Location: ${ad.location}</p>
-                <p>${ad.cancelled}</p>
-            </c:when>
-            <c:otherwise>
-                <p>${message}</p>
-            </c:otherwise>
-        </c:choose>
+                <c:if test="${ad.cancelled == true}">
+                    <h2>Event cancelled</h2>
+                </c:if>
+
+
+
+
 
 
 

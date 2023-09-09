@@ -35,7 +35,7 @@
 
         <div class="form-group">
             <label for="cancel">Cancel event?</label>
-            <input type="checkbox" id="cancel" name="cancel">
+            <input type="checkbox" id="cancel" name="cancel" value="true">
         </div>
 
         <input type="submit" class="btn btn-block btn-primary">
