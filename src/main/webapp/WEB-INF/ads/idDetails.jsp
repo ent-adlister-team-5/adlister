@@ -10,6 +10,7 @@
     <h1>Selected Ad... </h1>
     <div>
         <c:choose>
+<%--            This will no longer be needed, but can utilize for boolean--%>
             <c:when test="${ad != null}">
                 <p>${ad.title}</p>
                 <p>${ad.description}</p>

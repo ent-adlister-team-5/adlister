@@ -11,20 +11,42 @@
 
 <div class="container">
   <h1>SEARCHED ADDS!</h1>
+  <c:choose>
+    <c:when test="${noAds}">
+      <h1>Sorry, no events by that title found :(</h1>
+    </c:when>
 
-  <c:forEach var="ad" items="${ads}">
-    <div class="card">
-      <div class="card-body">
-        <div class="col-md-6">
-          <div class= "search-details">
-            <h2>${ad.title}</h2>
-            <p>${ad.description}</p>
-            <a class="btn btn-primary" href="./id-details?id=${ad.id}">View Details</a>
+    <c:otherwise>
+      <c:forEach var="ad" items="${ads}">
+        <div class="card">
+          <div class="card-body">
+            <div class="col-md-6">
+              <div class= "search-details">
+                <h2>${ad.title}</h2>
+                <p>${ad.description}</p>
+                <a class="btn btn-primary" href="./id-details?id=${ad.id}">View Details</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </c:forEach>
+      </c:forEach>
+
+    </c:otherwise>
+  </c:choose>
+
+<%--  <c:forEach var="ad" items="${ads}">--%>
+<%--    <div class="card">--%>
+<%--      <div class="card-body">--%>
+<%--        <div class="col-md-6">--%>
+<%--          <div class= "search-details">--%>
+<%--            <h2>${ad.title}</h2>--%>
+<%--            <p>${ad.description}</p>--%>
+<%--            <a class="btn btn-primary" href="./id-details?id=${ad.id}">View Details</a>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--    </div>--%>
+<%--  </c:forEach>--%>
 </div>
 
 
