@@ -10,7 +10,7 @@
 <div class="container">
     <h1>Edit Ad</h1>
 
-    <form method="">
+    <form method="POST" action="./edit-ad?id=${ad.id}">
 
         <div class="form-group">
             <label for="title">Title</label>
@@ -31,6 +31,11 @@
         <div class="form-group">
             <label for="location">Location</label>
             <textarea id="location" name="location" type="text" class="form-control">${ad.location}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="cancel">Cancel event?</label>
+            <input type="checkbox" id="cancel" name="cancel" value="true">
         </div>
 
         <input type="submit" class="btn btn-block btn-primary">

@@ -16,7 +16,7 @@ public interface Ads {
     // delete ad
     void deleteById(long id);
 
-    void editAd (long id, String userId, String title, String description, String date, String time, String location);
+    void editAd (String title, String description, String date, String time, String location, boolean cancelled, long id);
 
     List<Ad> findAdbyTitle(String title);
 
