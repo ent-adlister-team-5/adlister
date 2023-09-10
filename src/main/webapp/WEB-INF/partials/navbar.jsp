@@ -13,12 +13,12 @@
 <%--    </div><!-- /.container-fluid -->--%>
 <%--</nav>--%>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navHero">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">Adlister</a>
+        <a class="navbar-brand" href="/">E-ventures</a>
         <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/login">Login</a></li>
-<%--                        <li><a href="/logout">Logout</a></li>--%>
+                        <li><a class="loginNav" href="/login">Login</a></li>
+                        <li><a href="/logout">Logout</a></li>
 <%--                        <li><a href="/register">Register</a> </li>--%>
                     </ul>
         </div>
