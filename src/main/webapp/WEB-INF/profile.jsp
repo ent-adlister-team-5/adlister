@@ -25,6 +25,7 @@
                             <h2>${ad.title}</h2>
                             <p>${ad.location}</p>
                             <a class="btn btn-primary" href="./edit-ad?id=${ad.id}">Edit event</a>
+                            <a class="btn btn-primary" href="#">Delete event</a>
                         </div>
                     </div>
                 </div>
