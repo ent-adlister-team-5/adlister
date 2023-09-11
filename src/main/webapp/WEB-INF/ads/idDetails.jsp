@@ -17,6 +17,5 @@
     <p>Time: ${ad.time}</p>
     <p>Location: ${ad.location}</p>
 </div>
-
 </body>
 </html>
