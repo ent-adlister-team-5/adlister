@@ -13,9 +13,10 @@
 <%--<img src="/img/user-icon.png" class="user-pic" alt="user profile icon" onclick="toggleMenu()">--%>
 <%--  </div>--%>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark py-0">
         <a class="navbar-brand" href="/">Adlister</a>
-        <form role="search" action="/search" method="GET">
+        <form role="search" action="/search" method="GET" class="mb-0" >
+
             <div class="input-group">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search">
                 <div class="input-group-append">
@@ -23,6 +24,11 @@
                 </div>
             </div>
         </form>
+
+
+
+
+
         <!-- Start of Profile image navbar -->
         <img src="/img/user-icon.png" class="user-pic" alt="user profile icon" onclick="toggleMenu()">
 

@@ -16,13 +16,21 @@
     </div>
 
     <div class="container">
-        <h1>Here are your created events!</h1>
+        <h2>Personal settings</h2>
+        <a class="btn btn-primary" href="./edit-profile?id=${user.id}">Profile settings</a>
+    </div>
+
+    <div class="container">
+        <h1>This is another area of your profile</h1>
 
         <c:forEach var="ad" items="${ads}">
             <div class="card">
                 <div class="card-body">
                     <div class="col-md-6">
                         <div class= "search-details">
+                            <c:if test="${ad.cancelled == true}">
+                                <h2>Event cancelled</h2>
+                            </c:if>
                             <h2>${ad.title}</h2>
                             <p>${ad.location}</p>
                             <a class="btn btn-primary" href="./edit-ad?id=${ad.id}">Edit event</a>
