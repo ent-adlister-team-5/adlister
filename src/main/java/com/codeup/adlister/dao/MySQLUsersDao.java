@@ -61,10 +61,14 @@ public class MySQLUsersDao implements Users {
 
             ResultSet rs = stmt.executeQuery();
             if(rs.next()) {
-                User user = new User();
-                /** TO do !!!!*/
+                User user = new User(
+                        rs.getLong("id"),
+                        rs.getString("username"),
+                        rs.getString("email"),
+                        rs.getString("password")
+                );
+                return user;
             }
-
         } catch (SQLException e) {
             throw new RuntimeException("Error finding a user by this id", e);
         }
