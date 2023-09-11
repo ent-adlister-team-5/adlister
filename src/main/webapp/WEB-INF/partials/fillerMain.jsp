@@ -13,7 +13,7 @@
     <body>
         <div class="page-wrapper">
          <section class="home">
-             <video class="video-slide active" src="/img/Screen Recording 2023-09-10 at 4.56.12 AM.mov"autoplay muted loop></video>
+             <video class="video-slide active" src="/img/stars.mov" autoplay muted loop></video>
              <video class="video-slide" src="/img/concertView.mov"autoplay muted loop></video>
              <video class="video-slide" src="/img/lanterns.mov"autoplay muted loop></video>
              <video class="video-slide" src="/img/redLightscar.mov"autoplay muted loop></video>
