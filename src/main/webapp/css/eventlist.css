@@ -1,13 +1,11 @@
-/*---------------------------------User Menu bar---------------------------------*/
+
+/*---------------------------------User Menu index---------------------------------*/
 .user-pic{
-width: 78px !important;
     border-radius: 50%;
     cursor: pointer;
     margin-left:30px;
-    height: 73px;
 
 }
-
 .sub-menu-wrap{
     position: absolute;
     top:100%;
@@ -76,12 +74,13 @@ transition:transfrom 0.5s;
 .sub-menu-link:hover p{
     font-Weight:600;
 }
-/*----------------------------end of user menu bar-----------------------------------------------------*/
+/*----------------------------end of user menu index-----------------------------------------------------*/
 
 /*--------carousel-----------*/
 .w-100{
     width: 100%;
     height: 50%;
+    margin-bottom: 46px;
 }
 /*--------carousel-----------*/
 
@@ -110,57 +109,14 @@ nav{
 .logo{
     width:120px;
 }
-/*nav form {*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*}*/
-/*nav form input[type="text"] {*/
-/*    border: none;*/
-/*    padding: 10px;*/
-/*    border-radius: 5px;*/
-/*    margin-right: 10px;*/
-/*}*/
-/*nav form button {*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*    border: none;*/
-/*    padding: 10px 20px;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*@media (max-width: 768px) {*/
-/*    nav {*/
-/*        flex-direction: column;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    nav form {*/
-/*        margin-top: 10px;*/
-/*        justify-content: center;*/
-/*    }*/
-
-/*    .logo {*/
-/*        margin-bottom: 10px;*/
-/*    }*/
-/*}*/
-
-nav {
-    background: #191919;
-}
-
-.navbar-brand {
-    color: white;
-}
 
 .form-control {
-    width: auto; /* Adjust the width as needed */
-    min-width: 200px; /* Set a minimum width for the input */
+    width: auto;
+    min-width: 200px;
 }
 
 .user-pic {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     cursor: pointer;
 }
 
@@ -168,10 +124,9 @@ a.navbar-brand {
     margin-right: 71%;
     margin-left: 19px;
 }
-/* Add media queries for responsiveness */
 @media (max-width: 768px) {
     .navbar-brand {
-        margin-right: auto; /* Center-align the brand on mobile */
+        margin-right: auto;
     }
 
     .form-control {
@@ -196,17 +151,7 @@ input.form-control {
 button.btn.btn-outline-success {
     margin-top: 17px;
 }
-
-
-
-
 /*-------------------------------End of navbar for Dashboard------------------------------------------------------*/
-
-
-
-
-
-
 
 /*css for fillerMain*/
 
@@ -214,59 +159,13 @@ h1,p{
 color: black !important;
 }
 
+/*-----------------------------------cards Ads---------------------------------------------------------------------*/
+
+.card-body{
+
+}
 
 
 
 
 
-
-
-
-/*.container-main{*/
-/*    align-items: center;*/
-/*}*/
-/*section{*/
-/*padding:100px 200px;*/
-/* }*/
-/*.home{*/
-/*    position: relative;*/
-/*    width:100%;*/
-/*    min-height: 100vh;*/
-/*    display:flex;*/
-/*    justify-content:center;*/
-/*    flex-direction:column;*/
-/*    !*background:blue;*!*/
-/*}*/
-/*.home.container-content{*/
-/*    z-index:888;*/
-/*    color:white;*/
-/*    width:70%;*/
-/*    margin-top:50px;*/
-/*}*/
-/*.home.container-content h1{*/
-/*font-size:4em;*/
-/*    font-weight:900;*/
-/*    text-transform:uppercase;*/
-/*    letter-spacing:5px;*/
-/*    line-height:75px;*/
-/*    margin-bottom:40px;*/
-/*}*/
-/*.home.container-content h1 span{*/
-/*    font-size:1.2em;*/
-/*    font-weight:600;*/
-/*}*/
-/*.home.container-content p{*/
-/*    margin-bottom: 65px;*/
-/*}*/
-/*.home.container-content a{*/
-/*   font-size: 1.1em;*/
-/*}*/
-/*.home video{*/
-/*    z-index:000;*/
-/*    position:relative;*/
-/*    top:0;*/
-/*    left:0;*/
-/*    width:100%;*/
-/*    height:100%;*/
-/*    object-fit:cover;*/
-/*}*/
