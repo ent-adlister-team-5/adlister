@@ -1,8 +1,20 @@
 
 #navHero{
-    background: rgb(0, 0, 0) !important;
-    opacity: 90% !important;
+    background: linear-gradient(-45deg, #060606, #1D1E22, #9AA0A6, #03020F);!important;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
     box-shadow: 0 2px 4px 0 rgb(0, 0, 0) !important;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .loginNav{
     text-decoration: none;

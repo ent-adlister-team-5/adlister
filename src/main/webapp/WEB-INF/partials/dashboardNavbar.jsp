@@ -30,12 +30,12 @@
 
 
         <!-- Start of Profile image navbar -->
-        <img src="/img/user-icon.png" class="user-pic" alt="user profile icon" onclick="toggleMenu()">
+        <img src="/img/userp.png" class="user-pic" alt="user profile icon" onclick="toggleMenu()">
 
         <div class="sub-menu-wrap" id="subMenu">
     <div class="sub-menu">
 <div class="user-info">
-<img src="/img/user-icon.png">
+<img src="/img/userp.png">
   <h2>User</h2>
 </div>
       <hr>

@@ -7,18 +7,22 @@
         <jsp:param name="title" value="Your Profile" />
     </jsp:include>
     <link rel="stylesheet" href="../css/deleteModal.css">
+    <link rel="stylesheet" href="../css/eventlist.css">
 </head>
 <body>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+    <jsp:include page="/WEB-INF/partials/profileNav.jsp" />
 
     <div class="container">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
     </div>
 
+<jsp:include page= "/WEB-INF/partials/profileContainer.jsp" />
+<%--THIS SECTION NEEDS TO BRE IN PARTIALS--%>
     <div class="container">
         <h2>Personal settings</h2>
         <a class="btn btn-primary" href="./edit-profile?id=${user.id}">Profile settings</a>
     </div>
+ <%--------------------------------------------%>
 
     <div class="container">
         <h1>This is another area of your profile</h1>
@@ -41,17 +45,18 @@
             </div>
         </c:forEach>
     </div>
+    <jsp:include page="/WEB-INF/partials/profileModal.jsp" />
 
     <!-- Modal HTML -->
-    <div id="deleteConfirmationModal" class="modal">
-        <div class="modal-content">
-            <h2>Delete Confirmation</h2>
-            <p id="adTitle"></p> <!-- To display ad title dynamically -->
-            <p>Are you sure you want to delete this event?</p>
-            <button id="confirmDeleteBtn">Delete</button>
-            <button id="cancelDeleteBtn">Cancel</button>
-        </div>
-    </div>
+<%--    <div id="deleteConfirmationModal" class="modal">--%>
+<%--        <div class="modal-content">--%>
+<%--            <h2>Delete Confirmation</h2>--%>
+<%--            <p id="adTitle"></p> <!-- To display ad title dynamically -->--%>
+<%--            <p>Are you sure you want to delete this event?</p>--%>
+<%--            <button id="confirmDeleteBtn">Delete</button>--%>
+<%--            <button id="cancelDeleteBtn">Cancel</button>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 
 
 <script src="../js/deleteEvent.js"></script>
