@@ -13,11 +13,11 @@
     <body>
         <div class="page-wrapper">
          <section class="home">
-             <video class="video-slide active" src="/img/Screen Recording 2023-09-10 at 4.56.12 AM.mov"autoplay muted loop></video>
-             <video class="video-slide" src="/img/concertView.mov"autoplay muted loop></video>
-             <video class="video-slide" src="/img/lanterns.mov"autoplay muted loop></video>
-             <video class="video-slide" src="/img/Screen Recording 2023-09-10 at 4.56.12 AM.mov"autoplay muted loop></video>
-             <video class="video-slide" src="/img/Screen Recording 2023-09-10 at 4.56.12 AM.mov"autoplay muted loop></video>
+             <video class="video-slide active" src="/movies/stars.mov" autoplay muted loop></video>
+             <video class="video-slide" src="/movies/concertView.mov" autoplay muted loop></video>
+             <video class="video-slide" src="/movies/lanterns.mov" autoplay muted loop></video>
+             <video class="video-slide" src="/movies/redLightscar.mov" autoplay muted loop></video>
+             <video class="video-slide" src="/movies/snow.mov" autoplay muted loop></video>
 <div class="content active">
 
              <div class="container-content">
