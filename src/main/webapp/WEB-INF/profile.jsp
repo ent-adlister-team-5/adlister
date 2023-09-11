@@ -6,6 +6,7 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Your Profile" />
     </jsp:include>
+    <link rel="stylesheet" href="../css/deleteModal.css">
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
@@ -44,5 +45,7 @@
         </div>
     </div>
 
+
+<script src="../js/deleteEvent.js"></script>
 </body>
 </html>
