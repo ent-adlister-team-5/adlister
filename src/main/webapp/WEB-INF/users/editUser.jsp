@@ -13,10 +13,10 @@
             <input id="username" name="username" class="form-control" type="text" value="${user.username}" required>
         </div>
         <div class="form-group">
-            <label for="email">Password</label>
-            <input id="email" name="email" class="form-control" type="text" value="${user.password}" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" class="form-control" type="text" value="${user.email}" required>
         </div>
-        <input type="submit" class="btn btn-primary btn-block" value="Log In">
+        <input type="submit" class="btn btn-primary btn-block" value="Submit">
 
     </form>
 
