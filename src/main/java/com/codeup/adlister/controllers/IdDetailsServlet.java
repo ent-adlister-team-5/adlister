@@ -2,6 +2,7 @@ package com.codeup.adlister.controllers;
 
 import com.codeup.adlister.dao.DaoFactory;
 import com.codeup.adlister.models.Ad;
+import com.codeup.adlister.tools.DateConverter;
 import com.codeup.adlister.tools.TimeConverter;
 
 import javax.servlet.ServletException;
@@ -27,6 +28,15 @@ public class IdDetailsServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
         ad.setTime(newTime);
+
+        String formattedDate = null;
+        try {
+            formattedDate = DateConverter.convertDate(ad.getDate());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        ad.setDate(formattedDate);
+
         req.setAttribute("ad", ad);
         req.getRequestDispatcher("/WEB-INF/ads/idDetails.jsp").forward(req, resp);
     }
