@@ -34,7 +34,7 @@
     /** Event Listener for delete confirmation */
     confirmBtn.addEventListener("click", () => {
         // redirect to the delete-ad servlet
-        window.location.href = `.delete-ad?id=${adIdToDelete}`;
+        window.location.href = `./delete-ad?id=${adIdToDelete}`;
     });
 
     /** Event Listener to cancel delete button */
@@ -42,7 +42,7 @@
         modal.style.display = "none";
     });
 
-    })
+    });
 
 
 
