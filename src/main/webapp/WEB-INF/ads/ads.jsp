@@ -17,7 +17,7 @@
 
         </div>
 
-        <div
+        <div>
         <c:forEach var="ad" items="${ads}">
             <div class="card">
                 <div class="card-body">
