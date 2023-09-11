@@ -3,4 +3,8 @@ target/
 .idea/
 Config.java
 *.mov
-src/main/webapp/img/*.mov
+src/main/webapp/img/concertView.mov
+src/main/webapp/img/lanterns.mov
+src/main/webapp/img/redLightscar.mov
+src/main/webapp/img/snow.mov
+src/main/webapp/img/stars.mov
