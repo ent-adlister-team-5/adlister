@@ -1,4 +1,10 @@
 (() => {
+    console.log(`hello from deleteEvent`);
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+
+
     /** Variables */
     const deleteLinks = document.querySelectorAll(".delete-link");
     const modal = document.querySelector("#deleteConfirmationModal");
@@ -13,15 +19,15 @@
 
     /** Event listeners and assignments for each modal interaction */
 
-    deleteLinks.forEach(deleteLink => {
+    deleteLinks.forEach((deleteLink) => {
         deleteLink.addEventListener("click", (e) => {
             e.preventDefault();
-            adIdToDelete = this.getAttribute("data-ad-id"); // refers to the HTML element that triggered this event.
-            adTitleToDelete = this.getAttribute("data-ad-title"); // get the ad title
+            adIdToDelete = e.target.getAttribute("data-ad-id"); // refers to the HTML element that triggered this event.
+            adTitleToDelete = e.target.getAttribute("data-ad-title"); // get the ad title
             modal.style.display = "block";
 
             // Setting the ad title in the modal
-            adTitleToDelete.textContent = `Title: ${adTitleToDelete}`;
+            adTitleElement.innerText = `Title: ${adTitleToDelete}`;
         });
     });
 
@@ -35,6 +41,8 @@
     cancelBtn.addEventListener("click", () => {
         modal.style.display = "none";
     });
+
+    })
 
 
 
