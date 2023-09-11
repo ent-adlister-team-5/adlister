@@ -1,10 +1,8 @@
 /*---------------------------------User Menu bar---------------------------------*/
 .user-pic{
-width: 78px !important;
-    border-radius: 50%;
     cursor: pointer;
     margin-left:30px;
-    height: 73px;
+
 
 }
 
@@ -110,49 +108,7 @@ nav{
 .logo{
     width:120px;
 }
-/*nav form {*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*}*/
-/*nav form input[type="text"] {*/
-/*    border: none;*/
-/*    padding: 10px;*/
-/*    border-radius: 5px;*/
-/*    margin-right: 10px;*/
-/*}*/
-/*nav form button {*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*    border: none;*/
-/*    padding: 10px 20px;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*}*/
 
-/*@media (max-width: 768px) {*/
-/*    nav {*/
-/*        flex-direction: column;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    nav form {*/
-/*        margin-top: 10px;*/
-/*        justify-content: center;*/
-/*    }*/
-
-/*    .logo {*/
-/*        margin-bottom: 10px;*/
-/*    }*/
-/*}*/
-
-nav {
-    background: #191919;
-}
-
-.navbar-brand {
-    color: white;
-}
 
 .form-control {
     width: auto; /* Adjust the width as needed */
@@ -201,12 +157,6 @@ button.btn.btn-outline-success {
 
 
 /*-------------------------------End of navbar for Dashboard------------------------------------------------------*/
-
-
-
-
-
-
 
 /*css for fillerMain*/
 
