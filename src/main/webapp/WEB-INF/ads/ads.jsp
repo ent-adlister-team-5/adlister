@@ -7,12 +7,17 @@
     </jsp:include>
     <link rel="stylesheet" href="css/eventlist.css">
 </head>
-<div>
+<div class>
 <jsp:include page="/WEB-INF/partials/dashboardNavbar.jsp" />
 
 <div class="container">
     <h1>Here Are all the ads!</h1>
-<div
+    <div>
+        <jsp:include page="/WEB-INF/partials/carosuel.jsp" />
+
+    </div>
+
+    <div
     <c:forEach var="ad" items="${ads}">
         <div class="card">
     <div class="card-body">
