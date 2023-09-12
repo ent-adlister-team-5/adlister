@@ -15,7 +15,7 @@
 
 <%-- This will only appear if we have a search --%>
         <c:if test="${not empty searched}">
-            <a class="btn btn-primary" href="/ads">All ads</a>
+            <a class="button" href="/ads">All ads</a>
         </c:if>
 <%-- This will only appear if we have a search --%>
 

@@ -5,6 +5,9 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Edit Event" />
     </jsp:include>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/editads.css">
+
 </head>
 <body>
 <div class="container">
