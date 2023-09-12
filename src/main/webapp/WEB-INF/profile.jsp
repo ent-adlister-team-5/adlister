@@ -14,12 +14,7 @@
 
 
 <jsp:include page= "/WEB-INF/partials/profileContainer.jsp" />
-<%--THIS SECTION NEEDS TO BRE IN PARTIALS--%>
-    <div class="container">
-        <h2>Personal settings</h2>
-        <a class="btn btn-primary" href="./edit-profile?id=${user.id}">Profile settings</a>
-    </div>
- <%--------------------------------------------%>
+
 
     <div class="container">
         <h1>This is another area of your profile</h1>
