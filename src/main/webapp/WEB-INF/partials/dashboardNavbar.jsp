@@ -1,19 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
-<%--<nav class="cesar" >--%>
-<%--  <div class="container">--%>
-<%--    <a class="navbar-brand-Logo"  href="/ads">Adlister</a>--%>
-
-<%--    <form class="d-flex" role="search" action="/search" method="GET">--%>
-<%--      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">--%>
-<%--      <button class="btn btn-outline-success" type="submit">Search</button>--%>
-<%--    </form>--%>
-
-<%--      &lt;%&ndash; Start of Profile image navbar &ndash;%&gt;--%>
-<%--<img src="/img/user-icon.png" class="user-pic" alt="user profile icon" onclick="toggleMenu()">--%>
-<%--  </div>--%>
-
     <nav class="navbar navbar-expand-lg navbar-dark py-0">
         <a class="navbar-brand" href="/">Adlister</a>
         <form role="search" action="/ads" method="GET" class="mb-0" >

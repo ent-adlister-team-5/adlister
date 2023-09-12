@@ -5,6 +5,8 @@
         <jsp:param name="title" value="Create a new Ad" />
     </jsp:include>
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/createAds.css">
+
 
 </head>
 <body>
