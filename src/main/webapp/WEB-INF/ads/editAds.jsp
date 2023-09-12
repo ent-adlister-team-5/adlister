@@ -14,15 +14,15 @@
 
         <div class="form-group">
             <label for="title">Title</label>
-            <input id="title" name="title" class="form-control" type="text" value="${ad.title}">
+            <input id="title" name="title" class="form-control" type="text" value="${ad.title}" required>
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea id="description" name="description" class="form-control" type="text">${ad.description}</textarea>
+            <textarea id="description" name="description" class="form-control" type="text" required>${ad.description}</textarea>
         </div>
         <div class="form-group">
             <label for="date">Date</label>
-            <input type="date" id="date" name="date" class="form-control" value="${ad.date}">
+            <input type="date" id="date" name="date" class="form-control" value="${ad.date}" required>
         </div>
         <div class="form-group">
             <label for="time">Time</label>
@@ -30,7 +30,7 @@
         </div>
         <div class="form-group">
             <label for="location">Location</label>
-            <textarea id="location" name="location" type="text" class="form-control">${ad.location}</textarea>
+            <textarea id="location" name="location" type="text" class="form-control" required>${ad.location}</textarea>
         </div>
 
         <div class="form-group">
