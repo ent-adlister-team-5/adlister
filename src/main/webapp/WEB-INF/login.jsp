@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
@@ -13,7 +15,7 @@
 
 
 <%--This part will display if a user is already in our database and tries to register again--%>
-<c:if test="${alreadyInDatabase != null}">
+<c:if test="${not empty alreadyInDatabase}">
     <p> <span style="color: white">${alreadyInDatabase} already exists. Please login.</span></p>
 </c:if>
 <%--This part will display if a user is already in our database and tries to register again--%>
