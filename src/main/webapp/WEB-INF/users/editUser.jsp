@@ -21,7 +21,6 @@
         </label>
     </div>
 
-
     <label>
         <input class="input" placeholder="" name="username" type="text" value="${user.username}" required>
         <span>Username</span>

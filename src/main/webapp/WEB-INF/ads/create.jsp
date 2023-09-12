@@ -12,41 +12,11 @@
 <body>
 <jsp:include page="/WEB-INF/partials/editUserNav.jsp"></jsp:include>
 
-    <div class="container">
-        <h1>Create a new Ad</h1>
-        <form action="/ads/create" method="post">
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input id="title" name="title" class="form-control" type="text" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Description</label>
-                <textarea id="description" name="description" class="form-control" type="text" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Time</label>
-                <input type="time" id="time" name="time" required class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="location">Location</label>
-                <textarea id="location" name="location" type="text" class="form-control" required></textarea>
-            </div>
-
-            <input type="submit" class="btn btn-block btn-primary">
-        </form>
-    </div>
-</body>
-</html>
-
 <form class="form" action="/ads/create" method="post">
     <h1 class="title">Create a new Ad </h1>
-    <p class="message">Create connections, memories, and New E-Ventures.</p>
+    <p class="message">Create connections, memories,& E-Ventures.</p>
     <div class="flex">
-        <label>Title>
+        <label>
             <input class="form-control" placeholder=""  name="title" type="text" required>
             <span>Title</span>
 
@@ -54,27 +24,25 @@
     </div>
 
     <label>
-        <textarea class="form-control" placeholder="" name="description" type="text"  required></textarea>
-        <span>Description</span>
-    </label>Description>
+        <textarea class="form-control" placeholder="Description:  &#10;Please mention if this event is family friendly." name="description" type="text"  required></textarea>
+    </label>
 
 
-    <label>Date>
+    <label>
         <input class="form-control" placeholder="" name="date" type="date"  required>
         <span>Date</span>
     </label>
 
 
 
-    <label>Time>
+    <label>
         <input class="form-control" placeholder="" name="time" type="time" required>
         <span>Time</span>
     </label>
 
 
     <label>
-        <textarea class="Location" placeholder="" name="location" type="text"  required></textarea>
-        <span>email</span>
+        <textarea class="form-control" placeholder="Location: &#10;Please include link if the event is online." name="location" type="text"  required></textarea>
     </label>
 
     <button class="submit">Submit</button>
