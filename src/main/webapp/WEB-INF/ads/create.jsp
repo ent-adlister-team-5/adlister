@@ -11,15 +11,15 @@
         <form action="/ads/create" method="post">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input id="title" name="title" class="form-control" type="text">
+                <input id="title" name="title" class="form-control" type="text" required>
             </div>
             <div class="form-group">
                 <label for="description">Description</label>
-                <textarea id="description" name="description" class="form-control" type="text"></textarea>
+                <textarea id="description" name="description" class="form-control" type="text" required></textarea>
             </div>
             <div class="form-group">
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date" class="form-control">
+                <input type="date" id="date" name="date" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="time">Time</label>
@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label for="location">Location</label>
-                <textarea id="location" name="location" type="text" class="form-control"></textarea>
+                <textarea id="location" name="location" type="text" class="form-control" required></textarea>
             </div>
 
             <input type="submit" class="btn btn-block btn-primary">
