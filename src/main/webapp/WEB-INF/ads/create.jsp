@@ -4,8 +4,14 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Create a new Ad" />
     </jsp:include>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/createAds.css">
+
+
 </head>
 <body>
+<jsp:include page="/WEB-INF/partials/editUserNav.jsp"></jsp:include>
+
     <div class="container">
         <h1>Create a new Ad</h1>
         <form action="/ads/create" method="post">
