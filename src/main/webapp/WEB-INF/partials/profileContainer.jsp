@@ -7,10 +7,14 @@
 --%>
 <%--<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">--%>
 
-    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="profile-pic col-md-6" id="profile-pic"></div>
-        <img class="user-image" src="/img/userp.png">
-</div>
+    <div class="d-flex pt-5 px-5 align-items-end justify-content-start user-banner " style="background-image: url('./img/pln.jpeg');">
+        <div class="container">
+            <div class="d-flex align-items-end gap-3">
+                <img class="user-image" src="/img/userp.png">
+                <div class="display-4">@${sessionScope.user.username}</div>
+            </div>
+        </div>
+    </div>
 
 
 
