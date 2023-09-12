@@ -12,6 +12,13 @@
     <jsp:include page="/WEB-INF/partials/loginNav.jsp" />
 
 
+<%--This part will display if a user is already in our database and tries to register again--%>
+<c:if test="${alreadyInDatabase != null}">
+    <p> <span style="color: white">${alreadyInDatabase} already exists. Please login.</span></p>
+</c:if>
+<%--This part will display if a user is already in our database and tries to register again--%>
+
+
 <form class="form" action="/login" method="POST">
     <div class="form-title"><span>Log In to experience a new</span></div>
     <div class="title-2"><span>E-Venture</span></div>
