@@ -14,57 +14,9 @@
         <jsp:include page="/WEB-INF/partials/dashboardNavbar.jsp"/>
 
         <div class="image-container">
-            <h1>Here Are all the ads!</h1>
             <div>
                 <jsp:include page="/WEB-INF/partials/carosuel.jsp"/>
             </div>
-
-            <%--        <c:choose>--%>
-            <%--            <c:when test="${not empty searchResults || searchResults.size() == 0}">--%>
-            <%--                <a class="btn btn-primary" href="/ads">All ads</a>--%>
-            <%--            </c:when>--%>
-            <%--        </c:choose>--%>
-
-
-
-
-
-<%--            <div class="card-container">--%>
-<%--                <c:choose>--%>
-<%--                    <c:when test="${not empty searchResults}">--%>
-<%--                        <c:forEach var="ad" items="${searchResults}">--%>
-<%--                            <div class="card" style="width: 18rem;">--%>
-<%--                                <div class="card-body">--%>
-<%--                                    <div>--%>
-<%--                                        <c:if test="${ad.cancelled == true}">--%>
-<%--                                            <h2>Event cancelled</h2>--%>
-<%--                                        </c:if>--%>
-<%--                                        <h2>${ad.title}</h2>--%>
-<%--                                        <p>${ad.description}</p>--%>
-<%--                                        <a class="btn btn-primary" href="./id-details?id=${ad.id}">View Details</a>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </c:forEach>--%>
-<%--                    </c:when>--%>
-<%--                    <c:otherwise>--%>
-<%--                        <c:forEach var="ad" items="${ads}">--%>
-<%--                            <div>--%>
-<%--                                <c:if test="${ad.cancelled == true}">--%>
-<%--                                    <h2>Event cancelled</h2>--%>
-<%--                                </c:if>--%>
-<%--                                <h2>${ad.title}</h2>--%>
-<%--                                <p>${ad.location}</p>--%>
-<%--                                <a class="btn btn-primary" href="./id-details?id=${ad.id}">View Details</a>--%>
-<%--                            </div>--%>
-<%--                        </c:forEach>--%>
-<%--                    </c:otherwise>--%>
-<%--                </c:choose>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--</div>--%>
-<%--</body>--%>
-
 
 
 <div class="container-hero d-flex flex-wrap gap-5">
