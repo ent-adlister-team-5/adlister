@@ -41,3 +41,30 @@
     </div>
 </body>
 </html>
+
+<form class="form" method="POST" action="./edit-profile?id=${user.id}">
+    <h1 class="title">Create a new Ad </h1>
+    <p class="message">Create.</p>
+    <div class="flex">
+        <label>
+        </label>
+    </div>
+
+
+    <label>
+        <input class="input" placeholder="" name="username" type="text" value="${user.username}" required>
+        <span>Username</span>
+    </label>
+
+
+    <label>
+    </label>
+
+
+    <label>
+        <input class="input" placeholder="" name="email" type="email" value="${user.email}" required>
+        <span>email</span>
+    </label>
+
+    <button class="submit">Submit</button>
+</form>
