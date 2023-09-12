@@ -23,7 +23,7 @@
         <div class="sub-menu">
             <div class="user-info">
                 <img src="/img/userp.png">
-                <h2>User</h2>
+                <h2>${sessionScope.user.username}</h2>
             </div>
             <hr>
             <a href="/logout" class="sub-menu-link">

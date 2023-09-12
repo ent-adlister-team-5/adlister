@@ -12,9 +12,6 @@
 <body>
     <jsp:include page="/WEB-INF/partials/profileNav.jsp" />
 
-    <div class="container">
-        <h1>Welcome, ${sessionScope.user.username}!</h1>
-    </div>
 
 <jsp:include page= "/WEB-INF/partials/profileContainer.jsp" />
 <%--THIS SECTION NEEDS TO BRE IN PARTIALS--%>
