@@ -34,7 +34,7 @@
     <div class="form-title"><span>Log In to experience a new</span></div>
     <div class="title-2"><span>E-Venture</span></div>
     <div class="input-container">
-        <input class="input-user" type="text" placeholder="Enter Username">
+        <input class="input-user" name="username" type="text" placeholder="Enter Username">
         <span> </span>
     </div>
 
@@ -46,11 +46,11 @@
     </section>
 
     <div class="input-container">
-        <input class="input-pwd" type="password" placeholder="Enter Password">
+        <input class="input-pwd" name="password" type="password" placeholder="Enter Password">
     </div>
 
     <button type="submit" class="submit" value="Log In">
-        <span class="sign-text" >Sign in</span>
+        <span class="sign-text">Sign in</span>
     </button>
 
     <p class="signup-link">
