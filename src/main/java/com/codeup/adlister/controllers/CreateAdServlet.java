@@ -27,6 +27,9 @@ public class CreateAdServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User loggedInUser = (User) request.getSession().getAttribute("user");
+        // get the url
+
+        // if url is empty string or null (im not sure) set the url to a placeholder url (or src path)
         Ad ad = new Ad(
                 loggedInUser.getId(),
                 request.getParameter("title"),
@@ -35,6 +38,7 @@ public class CreateAdServlet extends HttpServlet {
                 request.getParameter("time"),
                 request.getParameter("location"),
                 false
+                // include the new url
         );
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
