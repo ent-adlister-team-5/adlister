@@ -13,6 +13,7 @@
   <h1>SEARCHED ADDS!</h1>
   <c:choose>
     <c:when test="${noAds}">
+      <script>alert("No events found by that title");</script>
       <h1>Sorry, no events by that title found :(</h1>
     </c:when>
 
