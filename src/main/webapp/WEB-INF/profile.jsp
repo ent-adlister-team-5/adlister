@@ -43,19 +43,7 @@
         </c:forEach>
     </div>
     <jsp:include page="/WEB-INF/partials/profileModal.jsp" />
-
-    <!-- Modal HTML -->
-<%--    <div id="deleteConfirmationModal" class="modal">--%>
-<%--        <div class="modal-content">--%>
-<%--            <h2>Delete Confirmation</h2>--%>
-<%--            <p id="adTitle"></p> <!-- To display ad title dynamically -->--%>
-<%--            <p>Are you sure you want to delete this event?</p>--%>
-<%--            <button id="confirmDeleteBtn">Delete</button>--%>
-<%--            <button id="cancelDeleteBtn">Cancel</button>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-
-
 <script src="../js/deleteEvent.js"></script>
 </body>
 </html>
+
