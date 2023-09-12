@@ -7,7 +7,7 @@
         <jsp:param name="title" value="Your Profile" />
     </jsp:include>
     <link rel="stylesheet" href="../css/deleteModal.css">
-    <link rel="stylesheet" href="../css/eventlist.css">
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/profileNav.jsp" />
