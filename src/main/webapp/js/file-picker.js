@@ -6,7 +6,7 @@
         const filePickerVar = await FilePickerAPI.getFilePicker();
         console.log(filePickerVar);
 
-    })
+    });
 
 
 }) ();
