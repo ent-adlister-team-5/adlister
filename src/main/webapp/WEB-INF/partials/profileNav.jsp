@@ -7,15 +7,7 @@
 --%>
 <nav class="navbar navbar-expand-lg navbar-dark py-0">
     <a class="navbar-brand" href="/">E-ventures</a>
-    <form role="search" action="/search" method="GET" class="mb-0" >
 
-        <div class="input-group">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search">
-            <div class="input-group-append">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </div>
-        </div>
-    </form>
     <!-- Start of Profile image navbar -->
     <img src="/img/userp.png" class="user-pic" alt="user profile icon" onclick="toggleMenu()">
 
