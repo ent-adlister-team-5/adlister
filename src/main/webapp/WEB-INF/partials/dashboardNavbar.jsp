@@ -13,9 +13,11 @@
             </div>
         </form>
 
-<%--            For now, this button serves the purpose to get us back to all ads.--%>
-        <a class="btn btn-primary" href="/ads">All ads</a>
-
+<%-- This will only appear if we have a search --%>
+        <c:if test="${not empty searched}">
+            <a class="btn btn-primary" href="/ads">All ads</a>
+        </c:if>
+<%-- This will only appear if we have a search --%>
 
 
         <!-- Start of Profile image navbar -->

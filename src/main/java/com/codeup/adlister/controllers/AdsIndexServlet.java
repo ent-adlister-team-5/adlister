@@ -29,6 +29,7 @@ public class AdsIndexServlet extends HttpServlet {
 
         if (searchQuery != null && !searchQuery.isEmpty()) {
             List<Ad> searchResults = DaoFactory.getAdsDao().findAdbyTitle(searchQuery);
+            request.setAttribute("searched", true);
             request.setAttribute("ads", searchResults);
         } else {
             request.setAttribute("ads", DaoFactory.getAdsDao().all());
