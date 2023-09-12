@@ -19,11 +19,16 @@
         </div>
 
 
+<%--        <c:choose>--%>
+<%--            <c:when test="${not empty searchResults || searchResults.size() == 0}">--%>
+<%--                <a class="btn btn-primary" href="/ads">All ads</a>--%>
+<%--            </c:when>--%>
+<%--        </c:choose>--%>
+
+
+
             <c:choose>
                 <c:when test="${not empty searchResults}">
-                        <div>
-                            <a class="btn btn-primary" href="./ads" style="display: block;">All ads</a>
-                        </div>
                     <c:forEach var="ad" items="${searchResults}">
                         <div class="card">
                             <div class="card-body">

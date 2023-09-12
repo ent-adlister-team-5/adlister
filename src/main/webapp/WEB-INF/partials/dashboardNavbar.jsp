@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
 <%--<nav class="cesar" >--%>
@@ -25,10 +26,8 @@
             </div>
         </form>
 
-
+<%--            For now, this button serves the purpose to get us back to all ads.--%>
         <a class="btn btn-primary" href="/ads">All ads</a>
-
-
 
 
 
