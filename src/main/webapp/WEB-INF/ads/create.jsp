@@ -42,27 +42,38 @@
 </body>
 </html>
 
-<form class="form" method="POST" action="./edit-profile?id=${user.id}">
+<form class="form" action="/ads/create" method="post">
     <h1 class="title">Create a new Ad </h1>
-    <p class="message">Create.</p>
+    <p class="message">Create connections, memories, and New E-Ventures.</p>
     <div class="flex">
-        <label>
+        <label>Title>
+            <input class="form-control" placeholder=""  name="title" type="text" required>
+            <span>Title</span>
+
         </label>
     </div>
 
-
     <label>
-        <input class="input" placeholder="" name="username" type="text" value="${user.username}" required>
-        <span>Username</span>
+        <textarea class="form-control" placeholder="" name="description" type="text"  required></textarea>
+        <span>Description</span>
+    </label>Description>
+
+
+    <label>Date>
+        <input class="form-control" placeholder="" name="date" type="date"  required>
+        <span>Date</span>
+    </label>
+
+
+
+    <label>Time>
+        <input class="form-control" placeholder="" name="time" type="time" required>
+        <span>Time</span>
     </label>
 
 
     <label>
-    </label>
-
-
-    <label>
-        <input class="input" placeholder="" name="email" type="email" value="${user.email}" required>
+        <textarea class="Location" placeholder="" name="location" type="text"  required></textarea>
         <span>email</span>
     </label>
 
