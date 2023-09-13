@@ -1,5 +1,14 @@
 
 /*---------------------------------User Menu index---------------------------------*/
+.event-cancelled {
+    color: red !important;
+    font-weight: bolder;
+    font-size: 23px;
+}
+svg.bi.bi-emoji-tear {
+    margin-top: -16px;
+    width: 32px;
+}
 .user-pic{
     border-radius: 50%;
     cursor: pointer;
