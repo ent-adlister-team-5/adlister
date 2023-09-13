@@ -27,9 +27,19 @@ public class CreateAdServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User loggedInUser = (User) request.getSession().getAttribute("user");
+        String fileStackUrl = request.getParameter("url");
+        String defaultImage = "../../webapp/img/pln.jpeg";
         // get the url
 
         // if url is empty string or null (im not sure) set the url to a placeholder url (or src path)
+        String imageToInsert = null;
+
+        if(fileStackUrl == null) {
+            imageToInsert = defaultImage;
+        } else {
+            imageToInsert = fileStackUrl;
+        }
+
         Ad ad = new Ad(
                 loggedInUser.getId(),
                 request.getParameter("title"),
@@ -37,8 +47,9 @@ public class CreateAdServlet extends HttpServlet {
                 request.getParameter("date"),
                 request.getParameter("time"),
                 request.getParameter("location"),
-                false
+                false,
                 // include the new url
+                imageToInsert
         );
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");

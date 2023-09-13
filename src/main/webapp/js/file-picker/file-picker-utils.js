@@ -16,7 +16,7 @@ export class FilePickerAPI {
                 document.querySelector("#upload-preview").innerHTML = `
                     <img src="${file.url}">
                 `;
-
+                document.querySelector("#upload-input").value = file.url;
             }
         };
         client.picker(options).open();

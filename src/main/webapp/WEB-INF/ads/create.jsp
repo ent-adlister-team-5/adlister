@@ -48,10 +48,10 @@
     <div id="upload-image">Upload Image?</div>
     <input id="upload-input" name="url" type="hidden">
     <div id="upload-preview">
-
     </div>
 
     <button class="submit">Submit</button>
+
 </form>
 
 

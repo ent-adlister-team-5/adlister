@@ -21,6 +21,7 @@ CREATE TABLE ads (
     time VARCHAR(255) NOT NULL,
     location VARCHAR(250) NOT NULL,
     cancelled BOOLEAN,
+    image VARCHAR(255) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users(id)
         ON DELETE CASCADE
