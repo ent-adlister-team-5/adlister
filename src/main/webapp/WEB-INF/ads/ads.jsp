@@ -25,7 +25,7 @@
         <div class="card">
     <c:forEach var="ad" items="${searchResults}">
         <div class="card">
-            <img src="https://burst.shopifycdn.com/photos/hiker-looks-up-at-vertical-mountain-peaks.jpg?width=925&exif=0&iptc=0" class="card-img-top" alt="place-holder">
+            <img src="${ad.image}" class="card-img-top" alt="place-holder">
             <div class="card-body">
                 <div>
                     <c:if test="${ad.cancelled == true}">
@@ -42,7 +42,7 @@
         <c:otherwise>
             <c:forEach var="ad" items="${ads}">
                 <div class="card">
-                    <img src="/img/pln.jpeg" class="card-img-top" alt="place-holder">
+                    <img src="${ad.image}" class="card-img-top" alt="place-holder">
 
                     <div class="card-body">
                     <c:if test="${ad.cancelled == true}">
