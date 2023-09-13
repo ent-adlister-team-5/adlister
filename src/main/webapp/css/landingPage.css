@@ -135,4 +135,11 @@ a.register-landing {
     transition-property: clip-path;
 
 }
+img.img-nl {
+    width: 15px;
+    height:15px;
+    position: relative;
+    top: 186px;
+
+}
 

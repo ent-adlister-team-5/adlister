@@ -9,16 +9,24 @@
     </jsp:include>
     <link rel="stylesheet" href="css/eventlist.css">
     <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/carouselBackground.css">
+<%--    <link rel="stylesheet" href="css/carouselBackground.css">--%>
 
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/carosuelBackground.jsp"/>
 
-    <div class="container-j">
-        <jsp:include page="/WEB-INF/partials/dashboardNavbar.jsp"/>
+<%--<jsp:include page="/WEB-INF/partials/carosuelBackground.jsp"/>--%>
 
-        <div class="container image-container">
+    <jsp:include page="/WEB-INF/partials/dashboardNavbar.jsp"/>
+    <div class="container-fluid image-container p-0 m-0">
+
+        <%--CODE DID NOT WORK---------%>
+
+<%--        <c:if test="${showAlert}">--%>
+<%--            <jsp:include page="/WEB-INF/partials/dashBoardAlert.jsp"/>--%>
+<%--        </c:if>--%>
+
+    <%--CODE DID NOT WORK---------%>
+
             <div>
                 <jsp:include page="/WEB-INF/partials/carosuel.jsp"/>
             </div>
@@ -75,8 +83,6 @@
     </c:choose>
 </div>
 </div>
-</div>
-
 </div>
     </div>
     <jsp:include page="/WEB-INF/partials/script.jsp"></jsp:include>
