@@ -2,19 +2,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equally sized columns */
     gap: 10px; /* Spacing between cards */
-    margin-right: 4rem;
-    margin-left: 4rem;
+    overflow-x: scroll;
 }
 .card {
     margin-bottom: 2rem;
-    width: 25vw;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
     min-width: 300px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    flex: 0 0 25vw;
 }
 .card:hover {
     transform: scale(1.05);
+}
+.container-j{
+    position:relative;
+    z-index:22;
 }

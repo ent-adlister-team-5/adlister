@@ -43,14 +43,14 @@ section{
     flex-direction:column;
     background: black;
 }
-.home.container-content{
+.home.content{
     z-index:888;
     color:white;
     width:70%;
     margin-top:50px;
     display:none;
 }
-.home.container-content h1{
+.home.content h1{
     font-size:4em;
     font-weight:900;
     text-transform:uppercase;
@@ -61,11 +61,11 @@ section{
 .home.content.active{
     display:block;
 }
-.home.container-content h1 span{
+.home.content h1 span{
     font-size:1.2em;
     font-weight:600;
 }
-.home.container-content p{
+.home.content p{
     margin-bottom: 65px;
 }
 /*.home.container-content a{*/

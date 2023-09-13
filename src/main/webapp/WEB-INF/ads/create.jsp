@@ -22,24 +22,19 @@
 
         </label>
     </div>
+    <label><textarea class="form-control" placeholder="Description:  &#10;Please mention if this event is family friendly." name="description" type="text"  required></textarea>
 
-    <label>
-        <textarea class="form-control" placeholder="Description:  &#10;Please mention if this event is family friendly." name="description" type="text"  required></textarea>
     </label>
-
 
     <label>
         <input class="form-control" placeholder="" name="date" type="date"  required>
         <span>Date</span>
     </label>
 
-
-
     <label>
         <input class="form-control" placeholder="" name="time" type="time" required>
         <span>Time</span>
     </label>
-
 
     <label>
         <textarea class="form-control" placeholder="Location: &#10;Please include link if the event is online." name="location" type="text"  required></textarea>
