@@ -12,8 +12,11 @@ export class FilePickerAPI {
             imageMin: [200, 200],
             imageMax: [200, 200],
             onFileUploadFinished: file => {
-                console.log(file);
-
+                console.log(file.url);
+                document.querySelector("#upload-preview").innerHTML = `
+                    <img src="${file.url}">
+                `;
+                document.querySelector("#upload-input").value = file.url;
             }
         };
         client.picker(options).open();

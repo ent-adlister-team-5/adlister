@@ -55,7 +55,7 @@ public class MySQLAdsDao implements Ads {
     @Override
     public Long insert(Ad ad) {
         try {
-            String insertQuery = "INSERT INTO ads(user_id, title, description, date, time, location, cancelled) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            String insertQuery = "INSERT INTO ads(user_id, title, description, date, time, location, cancelled, image) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
             stmt.setLong(1, ad.getUserId());
             stmt.setString(2, ad.getTitle());
@@ -64,6 +64,7 @@ public class MySQLAdsDao implements Ads {
             stmt.setString(5, ad.getTime());
             stmt.setString(6, ad.getLocation());
             stmt.setBoolean(7, ad.isCancelled());
+            stmt.setString(8, ad.getImage());
 
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
@@ -107,7 +108,8 @@ public class MySQLAdsDao implements Ads {
                         rs.getString("date"),
                         rs.getString("time"),
                         rs.getString("location"),
-                        rs.getBoolean("cancelled")
+                        rs.getBoolean("cancelled"),
+                        rs.getString("image")
                 );
                 return ad;
             }
@@ -126,7 +128,8 @@ public class MySQLAdsDao implements Ads {
                 rs.getString("date"),
                 rs.getString("time"),
                 rs.getString("location"),
-                rs.getBoolean("cancelled")
+                rs.getBoolean("cancelled"),
+                rs.getString("image")
         );
     }
 
@@ -144,7 +147,7 @@ public class MySQLAdsDao implements Ads {
 
     @Override
     public void editAd (String title, String description, String date, String time, String location, boolean cancelled, long id){
-        String updateQuery = "UPDATE ads SET title = ?, description = ?, date = ?, time = ?, location = ?, cancelled = ?  WHERE id = ?";
+        String updateQuery = "UPDATE ads SET title = ?, description = ?, date = ?, time = ?, location = ?, cancelled = ? WHERE id = ?";
         try {
 
             PreparedStatement stmt = connection.prepareStatement(updateQuery);

@@ -9,7 +9,31 @@ public class Ad {
     private String time;
     private String location;
     private boolean cancelled;
+    private String image;
 
+    public Ad(long userId, String title, String description, String date, String time, String location, boolean cancelled, String image) {
+        this.id = id;
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.time = time;
+        this.location = location;
+        this.cancelled = cancelled;
+        this.image = image;
+    }
+
+    public Ad(long id, long userId, String title, String description, String date, String time, String location, boolean cancelled, String image) {
+        this.id = id;
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.time = time;
+        this.location = location;
+        this.cancelled = cancelled;
+        this.image = image;
+    }
 
 
     public Ad(long id, long userId, String title, String description) {
@@ -108,5 +132,13 @@ public class Ad {
     }
     public void setCancelled(boolean cancelled) {
         this.cancelled = cancelled;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

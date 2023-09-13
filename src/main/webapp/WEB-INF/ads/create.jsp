@@ -45,5 +45,21 @@
         <textarea class="form-control" placeholder="Location: &#10;Please include link if the event is online." name="location" type="text"  required></textarea>
     </label>
 
+    <div id="upload-image">Upload Image?</div>
+    <input id="upload-input" name="url" type="hidden">
+    <div id="upload-preview">
+    </div>
+
     <button class="submit">Submit</button>
+
 </form>
+
+
+<script src="../../js/keys.js"></script>
+<%--    File picker SDK --%>
+<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+<%--    File picker SDK--%>
+
+<script src="../../js/file-picker/file-picker.js" type="module"></script>
+
+<body>
