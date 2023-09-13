@@ -6,10 +6,10 @@
         <form role="search" action="/ads" method="GET" class="mb-0" >
 
             <div class="input-group">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </div>
+                <input class="input-group-append" type="search" placeholder="Search" aria-label="Search" name="search">
+<%--                <div class="input-group-append">--%>
+<%--                    <button class="btn btn-outline-success" type="submit">Search</button>--%>
+<%--                </div>--%>
             </div>
         </form>
 
