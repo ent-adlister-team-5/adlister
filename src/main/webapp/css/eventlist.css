@@ -89,21 +89,31 @@ transition:transfrom 0.5s;
 /*----------------------------end of user menu index-----------------------------------------------------*/
 
 /*--------carousel-----------*/
-.w-100{
+.container.image-container {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+#carouselBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    height: 50%;
-    margin-bottom: 46px;
-    margin-top: 22px;
-
+    z-index: -1;
+    filter: blur(50px);
 }
-.container-fluid.image-container {
-    margin-top:-60px !important;
-}
-
-
 
 /*--------carousel-----------*/
-
+.hero-carousel-img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1288/356;
+}
+#carouselBackground .hero-carousel-img {
+    aspect-ratio: unset;
+    height: 100vh;
+    width: 100vw;
+}
 /*------------------------------- navbar for Dashboard------------------------------------------------------*/
 #navHero{
     background: linear-gradient(-45deg, #060606, #1D1E22, #9AA0A6, #03020F);!important;
