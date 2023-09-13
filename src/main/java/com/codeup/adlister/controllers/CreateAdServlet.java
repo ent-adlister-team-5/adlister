@@ -28,13 +28,13 @@ public class CreateAdServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User loggedInUser = (User) request.getSession().getAttribute("user");
         String fileStackUrl = request.getParameter("url");
-        String defaultImage = "../../webapp/img/pln.jpeg";
+        String defaultImage = "src/main/webapp/img/pln.jpeg";
         // get the url
 
         // if url is empty string or null (im not sure) set the url to a placeholder url (or src path)
         String imageToInsert = null;
 
-        if(fileStackUrl == null) {
+        if(fileStackUrl.isEmpty()) {
             imageToInsert = defaultImage;
         } else {
             imageToInsert = fileStackUrl;
