@@ -17,7 +17,7 @@
 <%--<jsp:include page="/WEB-INF/partials/carosuelBackground.jsp"/>--%>
 
     <jsp:include page="/WEB-INF/partials/dashboardNavbar.jsp"/>
-    <div class="container-fluid image-container p-0 m-0">
+    <div class="container image-container">
 
         <%--CODE DID NOT WORK---------%>
 
