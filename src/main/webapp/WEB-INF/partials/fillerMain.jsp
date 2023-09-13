@@ -35,7 +35,16 @@
                         <div class="nav-btn"></div>
 
                     </div>
-            </section>
+             <div class="footer">
+                 <h4>Sponsored By</h4>
+                 <ul>
+                     <li><a href="https://www.noonlight.com/"><img class="img-nl" src="/img/noonLight.png" width:15px height:15px ></a>
+                     </li>
+                 </ul>
+             </div>
+         </section>
+
+
              </div>
     <script>
         const btns = document.querySelectorAll(".nav-btn");

@@ -13,7 +13,7 @@
 <%--    </div><!-- /.container-fluid -->--%>
 <%--</nav>--%>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navHero">
+<nav class="navbar navbar-expand-lg bg-body-tertiary position-relative" id="navHero">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">E-ventures</a>
         <ul class="nav navbar-nav navbar-right">

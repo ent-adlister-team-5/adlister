@@ -87,6 +87,9 @@ transition:transfrom 0.5s;
     margin-top: 22px;
 
 }
+.container-fluid.image-container {
+    margin-top:-60px !important;
+}
 
 
 

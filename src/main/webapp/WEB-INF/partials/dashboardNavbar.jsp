@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark py-0">
+    <nav class="navbar navbar-expand-lg navbar-dark py-0 position-relative" style="z-index: 1;">
         <a class="navbar-brand" href="/">Adlister</a>
         <form role="search" action="/ads" method="GET" class="mb-0" >
 

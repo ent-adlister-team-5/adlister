@@ -15,10 +15,24 @@
 
 
 <%--This part will display if a user is already in our database and tries to register again--%>
+
 <c:if test="${not empty alreadyInDatabase}">
     <p> <span style="color: white">${alreadyInDatabase} already exists. Please login.</span></p>
 </c:if>
+
 <%--This part will display if a user is already in our database and tries to register again--%>
+
+
+<%--THIS MIGHT WORK-------------------%>
+
+<%--<c:if test="${not empty alreadyInDatabase}">--%>
+<%--    <p data-tooltip="Account already Exists. Try again or log in."> <span style="color: white">${alreadyInDatabase} </span></p>--%>
+<%--</c:if>--%>
+
+<%--THIS MIGHT WORK-------------------%>
+
+
+
 
 
 <form class="form" action="/login" method="POST">
