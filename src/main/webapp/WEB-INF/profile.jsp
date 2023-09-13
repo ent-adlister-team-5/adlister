@@ -17,8 +17,8 @@
 
 
     <div class="container">
-        <h1>This is another area of your profile</h1>
-
+        <h1>HEYYYY, ${sessionScope.user.username}!</h1>
+        <h3>All of your created Events will be displayed on this page</h3>
         <c:forEach var="ad" items="${ads}">
             <div class="card">
                 <div class="card-body">

@@ -10,6 +10,8 @@
 
 </head>
 <body>
+<jsp:include page="/WEB-INF/partials/editAdsNAv.jsp" />
+
 <div class="container">
     <form class="form" method="POST" action="./edit-ad?id=${ad.id}">
         <h1 class="title">Edit your Event </h1>
