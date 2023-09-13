@@ -1,0 +1,28 @@
+.bg-img-1{
+    background-image: url("/img/ev3.jpeg");
+}
+.bg-img-2{
+    background-image: url("/img/ev1.png");
+}
+.bg-img-3{
+    background-image: url("/img/ev2.webp");
+}
+
+.carousel-image{
+    /*height: 100vh;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position:center;*/
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 572px;
+    background:rgba(0,0,0,0.7);
+
+}
+body{
+    background: linear-gradient(114.9deg, rgb(34, 34, 34) 8.3%, rgb(0, 40, 60) 41.6%, rgb(8, 58, 86) 93.4%);
+background-size: cover;
+}

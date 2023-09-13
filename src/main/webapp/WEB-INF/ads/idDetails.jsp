@@ -17,7 +17,7 @@
     <p>Time: ${ad.time}</p>
     <c:choose>
         <c:when test="${fn:contains(ad.location, 'http') || fn:contains(ad.location, 'www')}">
-            <a href="${ad.location}">${ad.location}</a>
+           <h4>Online Event:</h4><a href="${ad.location}">${ad.location}</a>
         </c:when>
         <c:otherwise>
             <p>Location: ${ad.location}</p>

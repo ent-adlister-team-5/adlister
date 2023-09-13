@@ -20,7 +20,7 @@
              <video class="video-slide" src="/movies/snow.mov" autoplay muted loop></video>
 <div class="content active">
 
-             <div class="container-content">
+             <div class="content">
                     <h1>Discover<br><span> A World You Never Knew Existed!</span></h1>
                     <p>Create and View hundreds of Events, and Organizations right in your area with just a click away.</p>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dignissimos dolor <br>illum maiores molestias nulla odio sapiente, temporibus voluptatum? Beatae nostrum placeat quidem reiciendis?</p>
@@ -40,7 +40,7 @@
     <script>
         const btns = document.querySelectorAll(".nav-btn");
         const slides = document.querySelectorAll(".video-slide")
-        const contents = document.querySelectorAll(".container-content")
+        const contents = document.querySelectorAll(".content")
 
         let sliderNav = function(manual) {
             btns.forEach((btn) => {

@@ -3,7 +3,7 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Edit Event" />
+        <jsp:param name="title" value="Edit Event"/>
     </jsp:include>
     <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="../css/editads.css">
@@ -11,38 +11,46 @@
 </head>
 <body>
 <div class="container">
-    <h1>Edit Ad</h1>
+    <form class="form" method="POST" action="./edit-ad?id=${ad.id}">
+        <h1 class="title">Edit your Event </h1>
+        <p class="message">Mistakes happen, let's fix them.</p>
+        <div class="flex">
+            <label>
+                <input class="form-control" placeholder="" name="title" type="text" value="${ad.title}" required>
+                <span>Title</span>
 
-    <form method="POST" action="./edit-ad?id=${ad.id}">
+            </label>
+        </div>
+        <label><textarea class="form-control"
+                         placeholder="Description:  &#10;Please mention if this event is family friendly."
+                         name="description" type="text" required>${ad.description}</textarea>
 
-        <div class="form-group">
-            <label for="title">Title</label>
-            <input id="title" name="title" class="form-control" type="text" value="${ad.title}" required>
-        </div>
-        <div class="form-group">
-            <label for="description">Description</label>
-            <textarea id="description" name="description" class="form-control" type="text" required>${ad.description}</textarea>
-        </div>
-        <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date" class="form-control" value="${ad.date}" required>
-        </div>
-        <div class="form-group">
-            <label for="time">Time</label>
-            <input type="time" id="time" name="time" required class="form-control" value="${ad.time}">
-        </div>
-        <div class="form-group">
-            <label for="location">Location</label>
-            <textarea id="location" name="location" type="text" class="form-control" required>${ad.location}</textarea>
-        </div>
+        </label>
 
-        <div class="form-group">
+        <label>
+            <input class="form-control" placeholder="" name="date" type="date" value="${ad.date}" required>
+            <span>Date</span>
+        </label>
+
+        <label>
+            <input class="form-control" placeholder="" name="time" type="time" value="${ad.time}" required>
+            <span>Time</span>
+        </label>
+
+        <label>
+            <textarea class="form-control" placeholder="Location: &#10;Please include link if the event is online."
+                      name="location" type="text" required>${ad.location}</textarea>
+        </label>
+        <div class="center" >
             <label for="cancel">Cancel event?</label>
-            <input type="checkbox" id="cancel" name="cancel" value="true">
-        </div>
+            <input  type="checkbox" id="cancel" name="cancel" value="true">
 
-        <input type="submit" class="btn btn-block btn-primary">
+
+
+        </div>
+        <button class="submit">Submit</button>
     </form>
 </div>
 </body>
 </html>
+
