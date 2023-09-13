@@ -19,7 +19,6 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("/profile");
             return;
         }
-        request.setAttribute("alreadyInDatabase", request.getParameter("alreadyInDatabase"));
         request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
     }
 

@@ -15,7 +15,7 @@ import java.io.IOException;
 @WebServlet(name = "controllers.RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setAttribute("alreadyInDatabase", request.getParameter("alreadyInDatabase"));
         request.getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
     }
 
@@ -38,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
 
         User userInDatabase = DaoFactory.getUsersDao().findByUsername(username);
         if(userInDatabase != null) {
-            response.sendRedirect("/login?alreadyInDatabase=" + username);
+            response.sendRedirect("/register?alreadyInDatabase=" + username);
             return;
         }
 

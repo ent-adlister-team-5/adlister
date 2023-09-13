@@ -33,6 +33,12 @@ public class EditUserServlet extends HttpServlet {
                 req.getParameter("email"),
                 userId
         );
+        // pull the user from the database to get the updated user info
+        User user = DaoFactory.getUsersDao().findbyId(userId);
+        // remove old user from session
+        req.getSession().removeAttribute("user");
+        // add updated user to session
+        req.getSession().setAttribute("user", user);
         resp.sendRedirect("/profile");
     }
 }
