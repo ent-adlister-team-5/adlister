@@ -13,7 +13,7 @@
     <div>
 <jsp:include page="/WEB-INF/partials/editUserNav.jsp"></jsp:include>
 
-<form class="form" method="POST" action="./edit-profile?id=${user.id}">
+<form class="form" method="POST" action="./edit-profile?id=${user.id}" id="edit-profile">
     <p class="title">Edit Profile </p>
     <p class="message">Change is good, Let's start here.</p>
     <div class="flex">
@@ -37,4 +37,26 @@
     </label>
 
     <button class="submit">Submit</button>
+
 </form>
+    </div>
+
+<%--    <script>--%>
+<%--        const editForm = document.querySelector("#edit-profile");--%>
+<%--        const body = document.querySelector('body');--%>
+
+<%--        body.addEventListener("click", (e) => {--%>
+<%--            /** Checking to see if click is not within form */--%>
+<%--            if(!editForm.contains(e.target)) {--%>
+<%--                window.location.href = `./profile`;--%>
+<%--            }--%>
+<%--        });--%>
+
+<%--        /** Prevents clicks within form to trigger body event's listener */--%>
+<%--        editForm.addEventListener("click", (e) => {--%>
+<%--            e.stopPropagation();--%>
+<%--        })--%>
+
+<%--    </script>--%>
+</body>
+</html>
