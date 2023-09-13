@@ -2,7 +2,7 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/img/ev3.jpeg" class="d-block" alt="Kill Bill Poster">
+            <img src="/img/ev3.jpeg" class="d-block" alt="Poster">
             <div class="carousel-caption d-md-block">
                 <h4>First slide label</h4>
                 <p>Some representative placeholder content for the first slide.</p>

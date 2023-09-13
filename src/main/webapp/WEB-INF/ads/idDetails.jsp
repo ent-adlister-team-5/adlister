@@ -3,10 +3,19 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 <html>
 <head>
-    <title>Title</title>
+
+    <jsp:include page="/WEB-INF/partials/head.jsp">
+        <jsp:param name="title" value="Edit Event"/>
+    </jsp:include>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/viewdetails.css">
+
+
 </head>
 <body>
-<h1>Selected Ad... </h1>
+<jsp:include page="/WEB-INF/partials/editAdsNAv.jsp" />
+
+    <div class="card shadow">
 <div>
     <c:if test="${ad.cancelled == true}">
         <h2>Event cancelled</h2>
@@ -23,6 +32,7 @@
             <p>Location: ${ad.location}</p>
         </c:otherwise>
     </c:choose>
+    </div>
 </div>
 </body>
 </html>
