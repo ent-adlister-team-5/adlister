@@ -2,7 +2,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark py-0 position-relative" style="z-index: 1;">
-        <a class="navbar-brand" href="/">Adlister</a>
+        <a class="navbar-brand" href="/">E-Ventures</a>
         <form role="search" action="/ads" method="GET" class="mb-0" >
 
             <div class="input-group">
@@ -40,6 +40,12 @@
         <img src="/img/eye-solid.svg" class="view">
         <p>View Profile</p>
           <span>></span>
+          <a href="/ads/create" class="sub-menu-link">
+              <img src="/img/circle-plus-solid.svg" class="view">
+              <p>Create An Ad</p>
+              <span>></span>
+          </a>
+
       </a>
     </div>
   </div>
