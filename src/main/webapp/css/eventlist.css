@@ -91,6 +91,7 @@ transition:transfrom 0.5s;
 }
 .sub-menu-link:hover p{
     font-Weight:600;
+    color:lightgrey !important;
 }
 .sub-menu-link:hover img{
     font-Weight:600;
