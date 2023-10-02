@@ -26,13 +26,17 @@ svg.bi.bi-emoji-tear {
     z-index:2;
 }
 .sub-menu-wrap.open-menu{
-max-height: 400px;
+max-height: 477px;
 }
 
 .sub-menu{
     background: white;
     padding: 20px;
-    margin:10px;
+    margin: 10px;
+    border-radius: 22px;
+    border-style: solid;
+    border-width: medium;
+
 }
 .user-info{
    display: flex;
@@ -67,23 +71,28 @@ width:60px;
     margin-left: 10px;
 }
 
-.sub-menu-link img{
-    width:40px;
-    border-radius:50%;
-    padding: 8px;
-    margin-right: 5px;
-
+.sub-menu-link img {
+    width: 57px;
+    border-radius: 50%;
+    padding: 4px;
+    margin-right: 17px;
+    margin-left: 20px;
+    margin-top: -15px;
 }
+
 .sub-menu-link span{
     font-size: 22px;
 transition:transfrom 0.5s;
     color: black;
 
 }
-.sub-menu-link:hover span{
+.sub-menu-link:hover .hero{
     transform:translate(5px);
 }
 .sub-menu-link:hover p{
+    font-Weight:600;
+}
+.sub-menu-link:hover img{
     font-Weight:600;
 }
 /*----------------------------end of user menu index-----------------------------------------------------*/
@@ -182,18 +191,8 @@ a.navbar-brand {
         margin: 10px 0; /* Add spacing around the search bar on mobile */
     }
 
-    /*.input-group-append {*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
 }
 
-/*input.form-control {*/
-/*    margin-top: 16px;*/
-/*    margin-right: 9px;*/
-/*    border-radius: 17px;*/
-/*}*/
 
 button.btn.btn-outline-success {
     margin-top: 17px;
@@ -216,14 +215,73 @@ button.btn.btn-outline-success {
     -13px -13px 100px #ffffff;
 }
 
+/*-----------Border on profile sidebar--------------------*/
+
+.hero {
+    border-style: solid;
+    border-radius: 6px;
+    height: 50px;
+    color: #808080a8;
+}
+.hero:hover {
+    transform: scale(1.1); /* Increase the scale value for a bigger effect */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+button.btn {
+    border-style: none;
+    transform: scale(1.11);
+
+}
 
 
+/*-----------Start of Dropdown button--------------------*/
 
+.dropdown-menu.show {
+    display: block;
+    width: 100% !important;
+    overflow: scroll;
+}
 
-
-
-
-
+button.btn.dropdown-toggle.show {
+    width: 100% !important;
+}
+button.btn.dropdown-toggle {
+    width: 100% !important;
+}
+svg.shield {
+    width: 33px;
+    margin-left: -10px;
+}
+/*------------- Start of profile edit modal-------------*/
+.form-control {
+    width: 100%;
+    min-width: 200px;
+}
+button.btn {
+    width: 100%;
+}
+svg.edit {
+    width: 29px;
+    margin-left: -35px;
+    margin-right: 16px;
+}
+/*------------- Start of profile delete modal-------------*/
+button.btn.btn-primary.hero {
+    width: 26%;
+    color: white;
+}
+svg.delete {
+    width: 32px;
+    margin-left: -35px;
+    margin-right: 16px;
+}
+/*------------- Start of likes -------------*/
+svg.likes {
+    width: 36px;
+    margin-left: 22px;
+    margin-right: 29px
+}
 /*-------------------------------End of navbar for Dashboard------------------------------------------------------*/
 
 /*css for fillerMain*/
@@ -243,7 +301,6 @@ color: black !important;
     background-size: cover;
     background-position: center;
 }
-
 .user-image {
     height: 100px;
     aspect-ratio: 1/1;
@@ -252,6 +309,7 @@ color: black !important;
     margin-left: -66px;
 
 }
+
 .input {
     max-width: 190px;
     background-color: #f5f5f5;
@@ -265,20 +323,20 @@ color: black !important;
     box-shadow: 0px 10px 20px -18px;
     margin-right: 15px;
 }
-
 input:focus {
     border-bottom: 2px solid #5b5fc7;
-    /*border-radius: 4px 4px 2px 2px;*/
+/*border-radius: 4px 4px 2px 2px;*/
 }
+
 
 input:hover {
     outline: 1px solid lightgrey;
 }
 
+
+
+
 /*------- All Ads Button --------*/
-
-
-
 
 .button {
     font-size: 10px;
@@ -327,7 +385,5 @@ input:hover {
 .button:active {
     transform: scale(0.9);
 }
-
-
 
 

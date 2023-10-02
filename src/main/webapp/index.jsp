@@ -17,6 +17,7 @@
                 <jsp:include page="/WEB-INF/partials/footer.jsp" />
             </footer>
     </div>
+
 <jsp:include page="/WEB-INF/partials/script.jsp"></jsp:include>
 </body>
 </html>

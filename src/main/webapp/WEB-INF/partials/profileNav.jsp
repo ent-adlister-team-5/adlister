@@ -18,6 +18,7 @@
                 <h2>${sessionScope.user.username}</h2>
             </div>
             <hr>
+
             <a href="/logout" class="sub-menu-link">
                 <img src= "/img/person-walking-arrow-right-solid.svg" class="logout">
                 <p>Logout</p>
